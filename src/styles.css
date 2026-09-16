@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+.Container {
+  height: 100%;
+  width: 100%;
+  background: #5588ff;
+}
+
+.AppBar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+  z-index: 1;
+}
+
+.AppBar button {
+  border: none;
+  width: 40px;
+  height: 40px;
+  margin: 0 25px;
+  border-radius: 50%;
+  font-size: 20px;
+  cursor: pointer;
+  background: white;
+  color: #888;
+  outline: none;
+}
+
+.svgWrapper {
+  background: #5588ff;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 100%;
+}
+
+#Svg {
+  width: 100%;
+  height: 60px;
+}
